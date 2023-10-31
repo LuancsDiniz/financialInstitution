@@ -32,7 +32,7 @@ public class Program {
 		
 		ContractService pay = new ContractService(new PaypalService());
 		pay.processContract(obj, installmentNumber);
-		System.out.println("Parcelas:");
+		System.out.println("Installments:");
 		
 		for(Installment installment : obj.getInstallment()) {
 			System.out.println(installment);
